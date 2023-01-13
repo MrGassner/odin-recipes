@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>    
-        <li><a href="recipes/sloppy_joes.html">Sloppy Joes</a></li>
-        <li><a href="recipes/reuben_sandwich.html">Reuben Sandwich</a></li>
-        <li><a href="recipes/corn_dogs.html">Homemade Corn Dogs</a></li>
+    <header class="header-background">
+        <h1 class="texturized-title">ODIN RECIPES</h1>
+    </header>
+    
+    <ul> 
+        <div class="container">
+            <div class="menu-contents">
+                <div class="menu-items"> 
+                    <li id="sloppy_joes"><a href="recipes/sloppy_joes.html"><img src="images/sloppy_joes.jfif" alt="Sloppy Joes Image"></a></li>
+                    <label for="sloppy_joes">Sloppy Joes</label>
+                </div>
+                <div class="menu-items">
+                    <li id="reuben_sandwich"><a href="recipes/reuben_sandwich.html"><img src="images/reuben-sandwich.jpg" alt="Reuben Sandwich Image"></a></li>
+                    <label for="reuben_sandwich">Reuben Sandwich</label>
+                </div>
+                <div class="menu-items">
+                    <li id="corn_dogs"><a href="recipes/corn_dogs.html"><img src="images/corn_dogs.jfif" alt="Homemade Corn Dogs Image"></a></li>
+                    <label for="corn_dogs">Homemade Corn Dogs</label>
+                </div>
+            </div>
+        </div>
     </ul>
 </body>
 </html>
