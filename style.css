@@ -43,6 +43,14 @@ header {
     margin-bottom: 4rem;
 }
 
+.header-background {
+    background-image: url(images/Runes-background.jpg);
+    background-size:cover ;
+    background-position: center;
+    height: 200px;
+    opacity: 85%;
+}
+
 .texturized-title {
     font-size: 6em;
     filter: drop-shadow(10px 10px 1px black);
@@ -68,13 +76,7 @@ header {
     }
 }
 
-.header-background {
-    background-image: url(images/Runes-background.jpg);
-    background-size:cover ;
-    background-position: center;
-    height: 200px;
-    opacity: 85%;
-}
+
 
 
 
@@ -165,5 +167,5 @@ footer {
 }
 
 .footer-img:hover {
-    filter: drop-shadow(1px 1px 10px black);
+    filter: drop-shadow(1px 1px 10px rgb(151, 150, 149));
 }
