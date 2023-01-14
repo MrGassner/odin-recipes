@@ -12,7 +12,9 @@ body {
     padding: 0;
     height: 100vh;
     font-family: 'Skranji', cursive;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: 1fr 8fr;
 }
 
 img,
@@ -31,16 +33,11 @@ ul {
     list-style: none;
 }
 
-.pages-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-
-}
-
 /* header */
 
 header {
+    grid-column: 2 / -1;
+    grid-row: 1 / 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +77,8 @@ h3 > a {
 /* recipes body */
 
 .recipes-body {
+    grid-column: 2 / -1;
+    grid-row: 2 / 2;
     padding: 0 20px;
 }
 
@@ -87,10 +86,11 @@ h3 > a {
 /* sidebar */
 
 .sidebar {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
     background-color: rgb(37, 37, 37);
+    min-width: 225px;
 
-    min-width: 223px;
-    max-width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +119,12 @@ h3 > a {
     font-size: 1.5rem;
 }
 
-@media (max-width: 920px) {
+h3 {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 1000px) {
 
     .sidebar-title {
         font-size: 2rem;
@@ -131,14 +136,24 @@ h3 > a {
 }
 
 
-@media (max-width: 600px) {
-    
+@media (max-width: 651px) {
     body {
-        flex-direction: column-reverse;
-        height: auto;
+        grid-template-columns: none;
     }
 
-    .sidebar {
-        max-width: 100%;
+    .header {
+        grid-column: 1;
+        grid-row: 1;
     }
+    .sidebar {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .recipes-body {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    
 }
