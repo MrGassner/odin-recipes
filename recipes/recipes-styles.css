@@ -118,19 +118,6 @@ h3 {
     margin: 5px 0;
 }
 
-
-@media (max-width: 1000px) {
-
-    .sidebar-title {
-        font-size: 2rem;
-    }
-
-    h3 > a {
-        font-size: 1.2rem;
-    }
-}
-
-
 /* recipes body */
 
 .recipes-body {
@@ -142,9 +129,17 @@ h3 {
     font-size: 1rem; 
 }
 
+.image-ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .ingredients-steps {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
 }
 
 .ingredients > ul > li {
@@ -161,6 +156,26 @@ h3 {
 
 .ingredients {
     max-width: 50%;
+}
+
+.image {
+    width: 60%;
+}
+
+@media (max-width: 1000px) {
+
+    .sidebar-title {
+        font-size: 2rem;
+    }
+
+    h3 > a {
+        font-size: 1.2rem;
+    }
+
+    .image {
+        width: 100%;
+    }
+
 }
 
 
@@ -199,5 +214,5 @@ h3 {
 
     .steps {
         max-width: 100%;
-    }
+    }    
 }
