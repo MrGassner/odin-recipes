@@ -1,11 +1,8 @@
-This is the first project in Odin's project
+# The Odin Project: Recipes 
 
-The goal is to make a basic recipe website using only HTML,
-and learn how to use GitHub and set repositories correctly
+This is a basic recipes website. The website consist of a main index page which will have links 
+to a few recipes. the goal was to learn basic HTML/CSS and how to use the basics of GitHub repositories.
 
-I do not own any of the recipes or the images used in this project.
 
-All the recipes can be found originaly in the site below
+### All the recipes can be found originaly in the site below
 https://www.allrecipes.com/
-
-All used images are only for study purpouse
